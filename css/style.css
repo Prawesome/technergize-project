@@ -34,12 +34,33 @@ body {
     color: red;
 }
 
+/* Circular Progress Bar */
 .c100 {
     float: none;
     text-align: center;
     left: 40%;
     margin-top: 20px;
 }
+
+.dash-item:hover .c100 {
+    cursor: default;
+}
+
+.dash-item:hover .c100 > span {
+    width: 3.33em;
+    line-height: 3.33em;
+    font-size: 0.3em;
+    color: #307bbb;
+}
+
+.dash-item:hover .c100:after {
+    top: 0.04em;
+    left: 0.04em;
+    width: 0.92em;
+    height: 0.92em;
+}
+
+/* Positioning classes */ 
 
 .top-right {
     position: absolute;
