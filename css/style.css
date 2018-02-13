@@ -1,11 +1,17 @@
+/* Document wide styling */
+
 body {
     background-color: steelblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1em;
 }
+
+/* Dashboard items */
 
 .dash-item {
     display: inline-block;
-    border: 1px solid white;
+    border: 1.25px solid white;
+    border-radius: 5px;
     width: 30%;
     height: 40%;
     padding: 5px;
@@ -22,10 +28,18 @@ body {
 }
 
 .dash-item-title {  
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: center;
     color: white;
+    margin: 10px;
 }
+
+.dash-item-content {
+    margin-top: 50px;
+    padding: 5px;
+}
+
+/* Item specific styling */
 
 .drowsy-message {
     font-size: 1.2em;
@@ -38,8 +52,7 @@ body {
 .c100 {
     float: none;
     text-align: center;
-    left: 40%;
-    margin-top: 20px;
+    left: 35%;
 }
 
 .dash-item:hover .c100 {
