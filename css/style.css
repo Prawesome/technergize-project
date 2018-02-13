@@ -1,0 +1,72 @@
+body {
+    background-color: steelblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash-item {
+    display: inline-block;
+    border: 1px solid white;
+    width: 30%;
+    height: 40%;
+    padding: 5px;
+}
+
+.dash-item:hover {
+    background-color: white;
+    color: steelblue;
+    transition: 0.5s all;
+}
+
+.dash-item:hover > .dash-item-title {
+    color: brown;
+}
+
+.dash-item-title {  
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+}
+
+.drowsy-message {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 40px;
+    color: red;
+}
+
+.c100 {
+    float: none;
+    text-align: center;
+    left: 40%;
+    margin-top: 20px;
+}
+
+.top-right {
+    position: absolute;
+    top: 30px;
+    right: 10%;
+}
+
+.top-left {
+    position: absolute;
+    top: 30px;
+    left: 10%;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 30px;
+    right: 10%;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+}
