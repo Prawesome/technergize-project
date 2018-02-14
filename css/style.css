@@ -14,7 +14,6 @@ body {
     border-radius: 5px;
     width: 30%;
     height: 40%;
-    padding: 5px;
     background-color: white;
 }
 
@@ -24,6 +23,11 @@ body {
     margin: 10px;
     color: black;
     font-family: 'Rubik', sans-serif;
+}
+
+.absolute {
+    position: absolute;
+    left: 25%;
 }
 
 .dash-item-content {
@@ -61,6 +65,18 @@ body {
     color: brown;
     margin-bottom: 25px;
     font-size: 1.2em;
+}
+
+.video-wrapper {
+    position: relative;
+    height: 100%;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 /* Circular Progress Bar */
