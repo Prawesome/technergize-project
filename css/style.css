@@ -3,6 +3,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
+    background-color: rgb(250, 250, 250);
 }
 
 /* Dashboard items */
@@ -14,6 +15,7 @@ body {
     width: 30%;
     height: 40%;
     padding: 5px;
+    background-color: white;
 }
 
 .dash-item-title {  
@@ -45,6 +47,10 @@ body {
     color: #4db53c;
 }
 
+.drowsy-medium {
+    color: #e08833;
+}
+
 .safety-item-title {
     color: brown;
     margin-bottom: 50px;
@@ -72,7 +78,18 @@ body {
     width: 3.33em;
     line-height: 3.33em;
     font-size: 0.3em;
+}
+
+.green > span {
     color: #4db53c;
+}
+
+.orange > span {
+    color: #e08833;
+}
+
+.red > span {
+    color: #dd2222;
 }
 
 .c100:after {
