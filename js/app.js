@@ -8,6 +8,8 @@ let drowsyAmount = document.querySelector('.drowsiness-level');
 let drowsyLevel = 100;
 let drowsyCircularBar = document.querySelector('.c100');
 
+//Change colouring of whole web page at night times
+
 setInterval(function () {
     drowsyMsg.removeAttribute('class');
     drowsyCircularBar.removeAttribute('class');

@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     background-color: rgb(250, 250, 250);
+    background-image: url('../imgs/background.jpg');
 }
 
 p {
@@ -27,7 +28,13 @@ p {
     width: 30%;
     height: 40%;
     background-color: white;
+    box-shadow: 1px 1px 2px;
 }
+
+.no-border {
+    border: none;
+}
+
 .dash-item-title {  
     font-size: 1.3em;
     text-align: center;
@@ -78,7 +85,7 @@ p {
     font-size: 1.3em;
     letter-spacing: 0.05em;
     bottom: 0;
-    margin-left: 60px;
+    margin-left: 55px;
     white-space: nowrap;
 }
 
@@ -195,25 +202,25 @@ p {
 .top-right {
     position: absolute;
     top: 30px;
-    right: 10%;
+    right: 15%;
 }
 
 .top-left {
     position: absolute;
     top: 30px;
-    left: 10%;
+    left: 15%;
 }
 
 .bottom-right {
     position: absolute;
     bottom: 30px;
-    right: 10%;
+    right: 15%;
 }
 
 .bottom-left {
     position: absolute;
     bottom: 30px;
-    left: 10%;
+    left: 15%;
 }
 
 .flex-center {
