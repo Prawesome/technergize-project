@@ -31,7 +31,7 @@ p {
 .dash-item-title {  
     font-size: 1.3em;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
     color: black;
     font-family: 'Rubik', sans-serif;
     height: 12%;
@@ -68,12 +68,18 @@ p {
     color: #e08833;
 }
 
+.drowsy-content {
+    padding-top: 5%;
+}
+
 .item-title {
     font-family: 'Barlow Condensed', sans-serif;
     position: absolute;
     font-size: 1.3em;
+    letter-spacing: 0.05em;
     bottom: 0;
     margin-left: 60px;
+    white-space: nowrap;
 }
 
 .safety-item {
@@ -130,6 +136,10 @@ p {
     right: 0;
     width: 50%;
     height: 50%;
+}
+
+.quality-item-content {
+    margin-top: 10%;
 }
 
 .video-wrapper {

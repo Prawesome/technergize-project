@@ -1,6 +1,3 @@
-const date = new Date();
-const hours = date.getHours();
-
 const drowsySafe = 'You are up and active!';
 const drowsyDanger = 'You are drowsy! Stop the car!';
 const drowsyMedium = 'You are a bit drowsy, be careful!';
@@ -10,10 +7,6 @@ let drowsyAmount = document.querySelector('.drowsiness-level');
 // DEBUG VARIABLES
 let drowsyLevel = 100;
 let drowsyCircularBar = document.querySelector('.c100');
-
-if (hours > 12) {
-    //TODO: Change style at night time and day time accordingly 
-}
 
 setInterval(function () {
     drowsyMsg.removeAttribute('class');
