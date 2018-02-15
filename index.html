@@ -6,11 +6,12 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/circle.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik|Roboto:300|Barlow+Condensed" rel="stylesheet">
 </head>
 
 <body>
-    <div class="dash-item top-left flex-center">
+    <!-- fix alignment issues -->
+    <div class="dash-item top-left">
         <div class="dash-item-title">Driver Drowsiness Detection</div>
         <div class="dash-item-content">
             <div class="c100 p30 green">
@@ -27,20 +28,37 @@
     <div class="dash-item top-right">
         <div class="dash-item-title"> Driver Quality Indication</div>
         <div class="dash-item-content">
-            <p class="quality-item-title ">Aggressive Score:</p>
-            <p class="quality-item-title ">Normal Score:</p>
-            <p class="quality-item-title ">Past minute rating:</p>
-            <p class="quality-item-title ">Total Rating:</p>
+            <div class="quality-top-left">
+                <p class="item-title">Aggressive Score</p>
+            </div>
+            <div class="quality-top-right">
+                <p class="item-title">Normal Score</p>
+            </div>
+            <div class="quality-bottom-left">
+                <p class="item-title">Past minute rating</p>
+            </div>
+            <div class="quality-bottom-right">
+                <p class="item-title">Total Rating</p>
+            </div>
         </div>
     </div>
 
     <div class="dash-item bottom-left">
         <div class="dash-item-title">Driver Safety System</div>
         <div class="dash-item-content">
-            <p class="safety-item-title">Safe Distance: </p>
-            <p class="safety-item-title">Safe Velocity: </p>
+            <div class="safety-item-left">
+                <p class="item-title safety-item">Safe Distance</p>
+                <center>
+                    <p class="numeric-value safety-item-content">75m</p>
+                </center>
+            </div>
+            <div class="safety-item-right">
+                <p class="item-title safety-item">Safe Velocity</p>
+                <center>
+                    <p class="numeric-value safety-item-content">50</p>
+                </center>
+            </div>
         </div>
-
     </div>
 
     <!-- Make border cleaner -->
@@ -50,7 +68,6 @@
             <iframe width="400" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
             </iframe>
         </div>
-
     </div>
 
     <script src="js/app.js"></script>

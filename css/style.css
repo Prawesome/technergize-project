@@ -6,6 +6,18 @@ body {
     background-color: rgb(250, 250, 250);
 }
 
+p {
+    display: inline-block;
+    -webkit-margin-before: 0.25em;
+    -webkit-margin-after: 0.25em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.numeric-value {
+    font-size: 2.5em;
+}
+
 /* Dashboard items */
 
 .dash-item {
@@ -16,13 +28,13 @@ body {
     height: 40%;
     background-color: white;
 }
-
 .dash-item-title {  
     font-size: 1.3em;
     text-align: center;
-    margin: 10px;
+    padding-top: 5px;
     color: black;
     font-family: 'Rubik', sans-serif;
+    height: 12%;
 }
 
 .absolute {
@@ -31,8 +43,9 @@ body {
 }
 
 .dash-item-content {
-    margin-top: 25px;
-    padding: 5px;
+    position: relative;
+    width: 100%;
+    height: 85%;
 }
 
 /* Item specific styling */
@@ -55,16 +68,68 @@ body {
     color: #e08833;
 }
 
-.safety-item-title {
-    color: brown;
-    margin-bottom: 50px;
-    font-size: 1.2em;
+.item-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    position: absolute;
+    font-size: 1.3em;
+    bottom: 0;
+    margin-left: 60px;
 }
 
-.quality-item-title {
-    color: brown;
-    margin-bottom: 25px;
-    font-size: 1.2em;
+.safety-item {
+    margin-bottom: 20px;
+}
+
+.safety-item-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.safety-item-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.safety-item-content {
+    margin-top: 30%;
+}
+
+.quality-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.quality-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.quality-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.quality-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
 }
 
 .video-wrapper {
@@ -139,4 +204,10 @@ body {
     position: absolute;
     bottom: 30px;
     left: 10%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
