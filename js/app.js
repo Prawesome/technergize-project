@@ -4,12 +4,31 @@ const drowsyMedium = 'You are a bit drowsy, be careful!';
 let drowsyMsg = document.querySelector('.drowsy-message');
 let drowsyAmount = document.querySelector('.drowsiness-level');
 
+let aggressiveValue = document.querySelector('.aggressive-val');
+let normalValue = document.querySelector('.norm-val');
+let pastMinValue = document.querySelector('.past-minute-val');
+let totalRatingValue = document.querySelector('.total-rating-val');
+
+let safeDistanceValue = document.querySelector('.safe-distance-val');
+let safeVelocityValue = document.querySelector('.safe-velocity-val');
+
 // DEBUG VARIABLES
 let drowsyLevel = 100;
 let drowsyCircularBar = document.querySelector('.c100');
 
-//Change colouring of whole web page at night times
+//Randomizing all variables
+setInterval(function() {
+    aggressiveValue.textContent = Math.floor((Math.random() * 100) + 1);
+    normalValue.textContent = Math.floor((Math.random() * 100) + 1);
+    pastMinValue.textContent = Math.floor((Math.random() * 100) + 1);
+    totalRatingValue.textContent = Math.floor((Math.random() * 100) + 1);
+    safeDistanceValue.textContent = Math.floor((Math.random() * 100) + 1) + 'm';
+    safeVelocityValue.textContent = Math.floor((Math.random() * 100) + 1);
 
+}, 5000);
+
+//Change colouring of whole web page at night times
+/*
 setInterval(function () {
     drowsyMsg.removeAttribute('class');
     drowsyCircularBar.removeAttribute('class');
@@ -29,4 +48,4 @@ setInterval(function () {
         drowsyMsg.setAttribute('class', '');
         drowsyMsg.classList.add('drowsy-message', 'drowsy-safe');
     }
-}, 20000);
+}, 20000); */
