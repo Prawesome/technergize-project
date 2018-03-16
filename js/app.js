@@ -4,11 +4,9 @@ const drowsyMedium = 'You are a bit drowsy, be careful!';
 let drowsyMsg = document.querySelector('.drowsy-message');
 let drowsyAmount = document.querySelector('.drowsiness-level');
 
+let drowsyValue = document.querySelector('.drowsy-val');
 let aggressiveValue = document.querySelector('.aggressive-val');
-let normalValue = document.querySelector('.norm-val');
-let pastMinValue = document.querySelector('.past-minute-val');
 let totalRatingValue = document.querySelector('.total-rating-val');
-
 let safeDistanceValue = document.querySelector('.safe-distance-val');
 let safeVelocityValue = document.querySelector('.safe-velocity-val');
 
@@ -19,12 +17,10 @@ let drowsyCircularBar = document.querySelector('.c100');
 //Randomizing all variables
 setInterval(function() {
     aggressiveValue.textContent = Math.floor((Math.random() * 100) + 1);
-    normalValue.textContent = Math.floor((Math.random() * 100) + 1);
-    pastMinValue.textContent = Math.floor((Math.random() * 100) + 1);
     totalRatingValue.textContent = Math.floor((Math.random() * 100) + 1);
     safeDistanceValue.textContent = Math.floor((Math.random() * 100) + 1) + 'm';
     safeVelocityValue.textContent = Math.floor((Math.random() * 100) + 1);
-
+    drowsyValue.textContent = Math.floor((Math.random() * 100) + 1); 
 }, 5000);
 
 //Change colouring of whole web page at night times
