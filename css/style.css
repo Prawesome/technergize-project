@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     background-color: rgb(250, 250, 250);
-    background-image: url('../imgs/background.jpg');
+    background-image: url('../imgs/light-lines-540x337.png');
 }
 
 p {
@@ -17,6 +17,10 @@ p {
 
 .numeric-value {
     font-size: 2.5em;
+}
+
+.numeric-value-large {
+    font-size: 3em;
 }
 
 /* Dashboard items */
@@ -113,14 +117,6 @@ p {
     margin-top: 30%;
 }
 
-.quality-top-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
-}
-
 .quality-top-left {
     position: absolute;
     top: 0;
@@ -137,16 +133,21 @@ p {
     height: 50%;
 }
 
-.quality-bottom-right {
+.quality-right {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 50%;
-    height: 50%;
+    height: 100%;
 }
 
 .quality-item-content {
     margin-top: 10%;
+}
+
+.total-rating-val {
+    margin-top: 35%;
+    font-weight: 500;
 }
 
 .video-wrapper {
